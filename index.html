@@ -28,21 +28,21 @@
     <div class="hero bg-base-200 ">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
+      <form class="card-body">
         <fieldset class="fieldset">
           <label class="label ">Mobile Number</label>
-          <input type="number" class="input bg-gray-200" placeholder="Enter your number" />
+          <input id="Account-number" type="number" class="input bg-gray-200" placeholder="Enter your number" required />
           <label class="label">4 Digit Pin</label>
-          <input type="text" class="input bg-gray-200" placeholder="Enter 4 Digit Pin" />
-          <div><a class="link link-hover">Forgot password?</a></div>
-          <button class="btn bg-blue-500 mt-2 text-white">Login</button>
+          <input id="pin" type="text" class="input bg-gray-200" placeholder="Enter 4 Digit Pin" required />
+          <div><a class="link link-hover">Forgot password? </a></div>
+          <button id="login-btn" class="btn bg-blue-500 mt-2 text-white">Login</button>
         </fieldset>
-      </div>
+      </form>
     </div>
   </div>
 </div>
     </section>
 
-    
+    <script src="script/login.js"></script>
 </body>
 </html>
