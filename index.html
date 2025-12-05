@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    h1{
+        color: red;
+        font-size: large;
+        background-color: aqua;
+    }
+</style>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+        <nav class="flex justify-center items-center mt-6">
+            <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+                <img class="w-48 absolute" src="assets/bg.png" alt="">
+                <img class="w-16" src="assets/Group.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <!--log in section-->
+    <div class="hero bg-base-200 ">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label ">Mobile Number</label>
+          <input type="number" class="input bg-gray-200" placeholder="Enter your number" />
+          <label class="label">4 Digit Pin</label>
+          <input type="text" class="input bg-gray-200" placeholder="Enter 4 Digit Pin" />
+          <div><a class="link link-hover">Forgot password?</a></div>
+          <button class="btn bg-blue-500 mt-2 text-white">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    
+</body>
+</html>
