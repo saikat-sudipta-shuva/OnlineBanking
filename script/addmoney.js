@@ -1,4 +1,4 @@
-document.getElementById('add-money')
+document.getElementById('add-money-btn')
 .addEventListener('click',
     function(event){
         //console.log('a');

@@ -26,11 +26,11 @@
     
     <!--Card section-->
     <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
-        <div class="box cursor-pointer border p-4 text-center rounded-sm">
+        <div id="add-money-box" class="box cursor-pointer border p-4 text-center rounded-sm">
             <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
             <h3>Add Money</h3>
         </div>
-        <div class="box border p-4 text-center rounded-sm">
+        <div id="cash-out-box" class="box border p-4 text-center rounded-sm">
             <img class="w-8 mx-auto" src="assets/send1.png" alt="">
             <h3>Cash Out</h3>
         </div>
@@ -55,7 +55,7 @@
     
 
     <!--add money sectoin-->
-    <section>
+    <section id="add-money">
         <h2 class="text-xl font-bold ml-10 mt-5">Add Money</h2>
         <div class="">
   <div class="hero-content flex-col lg:flex-row-reverse">
@@ -77,17 +77,42 @@
           <label class="label">Pin Number</label>
           <input id="pin" type="text" class="input bg-gray-200" placeholder="Enter 4 Digit Pin number" required />
 
-          <button id="add-money" class="btn bg-blue-500 mt-2 text-white">Add Money</button>
+          <button id="add-money-btn" class="btn bg-blue-500 mt-2 text-white">Add Money</button>
         </fieldset>
       </div>
     </div>
   </div>
 </div>
-    </section>
+</section>
+<!--cash out-->
+    <section id="cash-out">
+        <h2 class="text-xl font-bold ml-10 mt-5">Cash Out</h2>
+        <div class="">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+
+    <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+          <fieldset class="fieldset">
+          <label class="label ">Agent Number</label>
+          <input id="Account-number" type="number" class="input bg-gray-200" placeholder="Enter 11 digit account number" required />
+           <label class="label ">Amount</label>
+          <input id="cashout-amount" type="number" class="input bg-gray-200" placeholder="Add Amount to withdraw" required />
+          <label class="label">Pin Number</label>
+          <input id="c-pin" type="text" class="input bg-gray-200" placeholder="Enter 4 Digit Pin number" required />
+
+          <button id="cash-out-btn" class="btn bg-blue-500 mt-2 text-white">Withdraw Money</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
     </section>
     </header>
     </section>
    <script src="script/addmoney.js"></script>
+   <script src="script/cashout.js"></script>
+   <script src="script/toggle.js"></script>
 </body>
 </html>
