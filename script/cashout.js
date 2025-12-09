@@ -16,6 +16,14 @@ document.getElementById('cash-out-btn')
             const sum=convertedMainCbalance-convertCAmount;
             //console.log(sum);
             document.getElementById('main-balance').innerText=sum;
+
+            //transaction history
+            const container=document.getElementById("transaction-container");
+            const p=document.createElement("p");
+            p.innerText=`
+            cash out ${convertCAmount} from account
+            `
+            container.appendChild(p);
        }
        else{
         alert('Invalid Pin');

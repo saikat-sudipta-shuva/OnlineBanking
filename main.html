@@ -17,7 +17,7 @@
                 <h1  class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
                 <p>available balance</p>
             </div>
-            <button class="btn">log Out</button>
+            <button id="log-out-btn" class="btn">log Out</button>
         </nav>
 
     <section>
@@ -47,7 +47,7 @@
             <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
             <h3>Pay Bill</h3>
         </div>
-        <div class="box border p-4 text-center rounded-sm">
+        <div id="transaction-box" class="box border p-4 text-center rounded-sm">
             <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
             <h3>Transactions</h3>
         </div>
@@ -64,7 +64,7 @@
       <div class="card-body">
           <fieldset class="fieldset">
             <legend class="label">Select Bank</legend>
-            <select class="select  appearance-none bg-gray-200">
+            <select id="allbank"  class="select  appearance-none bg-gray-200">
                 <option disabled selected >Select Bank</option>
                 <option value="Bkash">Bkash</option>
                 <option value="Naged">Naged</option>
@@ -108,11 +108,19 @@
 </div>
 </section>
 
+<section id="transaction-history">
+    <h1 class="text-3xl font-bold text-red-400 text-center p-3">Transaction History</h1>
+    <div id="transaction-container"></div>
+
+</section>
     </section>
     </header>
     </section>
    <script src="script/addmoney.js"></script>
    <script src="script/cashout.js"></script>
    <script src="script/toggle.js"></script>
+   
+   <!--<script src="script/add.js"></script>
+   <script src="script/utilities.js"></script>-->
 </body>
 </html>
